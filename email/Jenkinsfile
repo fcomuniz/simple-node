@@ -9,7 +9,7 @@ node {
         stage('build') {
             println("so far so good...")
         }
-        state('test') {
+        stage('test') {
             println('A test has failed!')
             sh 'exit 1'
         }
