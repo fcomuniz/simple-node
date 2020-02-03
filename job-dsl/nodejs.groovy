@@ -6,12 +6,12 @@ job('NodeJS example') {
         }
     )
     triggers {
-        scm("H/5 * * * *")
+        scm('H/5 * * * *')
     }
     wrappers {
-        nodejs("nodejs")
+        nodejs('nodejs')
     }
     steps {
-        shell("npm install")
+        shell('npm install')
     }
 }
