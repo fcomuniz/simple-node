@@ -22,6 +22,7 @@ node {
             sh 'npm install --only=dev'
             sh 'npm test'
         }
+        mysql.stop()
     }
     stage('docker build/push') {
         docker.withRegistry('https://index.docker.io/v1', 'DockerRegistry') {
